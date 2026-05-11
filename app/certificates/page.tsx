@@ -70,7 +70,7 @@ export default function Certificates() {
 
             {/* Description */}
             <p className="text-lg text-gray-400 leading-relaxed">
-              I'm actively working on obtaining professional certifications to validate my expertise in:
+              I&apos;m actively working on obtaining professional certifications to validate my expertise in:
             </p>
 
             {/* Certificate List */}

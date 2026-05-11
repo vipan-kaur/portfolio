@@ -74,7 +74,7 @@ export default function HeroSection() {
           {/* Main Title with Typing Animation */}
           <motion.div variants={itemVariants} className="space-y-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="text-white">Hi, I'm</span>{' '}
+              <span className="text-white">Hi, I&apos;m</span>{' '}
               <span className="gradient-text">Vipan Kaur</span>
             </h1>
             <div className="h-20 sm:h-24 md:h-28 flex items-center justify-center">

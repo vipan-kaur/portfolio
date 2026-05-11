@@ -51,8 +51,8 @@ export default function CTASection() {
             className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed"
             variants={itemVariants}
           >
-            As a CSE student passionate about learning web development, I'm excited to collaborate on projects 
-            and solve real-world problems. Let's build something amazing together and grow through practical experience.
+            As a CSE student passionate about learning web development, I&apos;m excited to collaborate on projects 
+            and solve real-world problems. Let&apos;s build something amazing together and grow through practical experience.
           </motion.p>
 
           {/* Stats */}

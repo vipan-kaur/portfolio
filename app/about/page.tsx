@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { HiAcademicCap, FaCode, FaBriefcase } from 'react-icons/fa'
+import { HiAcademicCap } from 'react-icons/hi'
+import {  FaCode, FaBriefcase } from 'react-icons/fa'
 import React from 'react'
 
 interface TimelineItem {
@@ -75,7 +76,7 @@ export default function About() {
               className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed"
               variants={itemVariants}
             >
-              I'm a B.Tech CSE student passionate about learning Full Stack MERN development. I'm building real-world projects,
+              I&apos;m a B.Tech CSE student passionate about learning Full Stack MERN development. I&apos;m building real-world projects,
               learning best practices, and continuously improving my skills in web development.
             </motion.p>
           </motion.div>
@@ -100,8 +101,8 @@ export default function About() {
               >
                 <h2 className="text-2xl font-bold text-white">Who am I?</h2>
                 <p className="text-gray-400 leading-relaxed">
-                  I'm Vipan Kaur, a passionate Full Stack MERN Developer currently pursuing my B.Tech in Computer Science Engineering 
-                  from CT University, Ludhiana. With a deep interest in web development and modern technologies, I'm committed to building 
+                  I&apos;m Vipan Kaur, a passionate Full Stack MERN Developer currently pursuing my B.Tech in Computer Science Engineering 
+                  from CT University, Ludhiana. With a deep interest in web development and modern technologies, I&apos;m committed to building 
                   solutions that not only work efficiently but also provide exceptional user experiences.
                 </p>
               </motion.div>
@@ -113,8 +114,8 @@ export default function About() {
                 <h2 className="text-2xl font-bold text-white">My Journey</h2>
                 <p className="text-gray-400 leading-relaxed">
                   My journey in web development started with a passion for creating interactive and responsive web applications. 
-                  Over the years, I've honed my skills in both frontend and backend development, learning best practices and industry standards. 
-                  Currently, I'm training at Mender Software, Mohali, where I'm gaining practical experience in building real-world applications 
+                  Over the years, I&apos;ve honed my skills in both frontend and backend development, learning best practices and industry standards. 
+                  Currently, I&apos;m training at Mender Software, Mohali, where I&apos;m gaining practical experience in building real-world applications 
                   and collaborating with professional teams.
                 </p>
               </motion.div>
@@ -123,9 +124,9 @@ export default function About() {
                 className="glass p-8 rounded-2xl space-y-4"
                 variants={itemVariants}
               >
-                <h2 className="text-2xl font-bold text-white">What I'm Currently Learning</h2>
+                <h2 className="text-2xl font-bold text-white">What I&apos;m Currently Learning</h2>
                 <div className="space-y-3">
-                  <p className="text-gray-400">I'm actively expanding my skill set with:</p>
+                  <p className="text-gray-400">I&apos;m actively expanding my skill set with:</p>
                   <ul className="space-y-2">
                     {[
                       'Next.js - Modern React framework for production applications',

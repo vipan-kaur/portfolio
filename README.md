@@ -1,4 +1,4 @@
-# Vipan Kaur's Premium Portfolio
+# Vipan Kaur's  Portfolio
 
 A stunning, modern, fully responsive portfolio website built with Next.js, Tailwind CSS, and Framer Motion.
 

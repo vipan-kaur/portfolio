@@ -104,7 +104,7 @@ export default function SkillsShowcase() {
             <span className="gradient-text">Skills & Learning</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Technologies and tools I'm learning and practicing as a student
+            Technologies and tools I&apos;m learning and practicing as a student
           </p>
         </motion.div>
 

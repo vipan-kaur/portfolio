@@ -193,22 +193,41 @@ function ProjectCard({ project }: { project: Project }) {
         {/* Tags */}
         <div className="flex flex-wrap gap-2 pt-4 border-t border-emerald-400/20">
           {project.tags.map((tag, index) => (
+            // <motion.span
+            //   key={tag}
+            //   className="text-xs px-2 py-1 rounded-full bg-emerald-400/5 border border-emerald-400/40 text-emerald-300 cursor-pointer"
+            //   whileHover={{
+            //     scale: 1.1,
+            //     backgroundColor: 'rgba(16, 185, 129, 0.15)',
+            //     boxShadow: '0 0 12px rgba(16, 185, 129, 0.5)',
+            //   }}
+            //   transition={{ duration: 0.2 }}
+            //   initial={{ opacity: 0, y: 5 }}
+            //   whileInView={{ opacity: 1, y: 0 }}
+            //   viewport={{ once: true }}
+            //   transition={{ delay: index * 0.05 }}
+            // >
+            //   {tag}
+            // </motion.span>
+
             <motion.span
-              key={tag}
-              className="text-xs px-2 py-1 rounded-full bg-emerald-400/5 border border-emerald-400/40 text-emerald-300 cursor-pointer"
-              whileHover={{
-                scale: 1.1,
-                backgroundColor: 'rgba(16, 185, 129, 0.15)',
-                boxShadow: '0 0 12px rgba(16, 185, 129, 0.5)',
-              }}
-              transition={{ duration: 0.2 }}
-              initial={{ opacity: 0, y: 5 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.05 }}
-            >
-              {tag}
-            </motion.span>
+  key={tag}
+  className="text-xs px-2 py-1 rounded-full bg-emerald-400/5 border border-emerald-400/40 text-emerald-300 cursor-pointer"
+  whileHover={{
+    scale: 1.1,
+    backgroundColor: 'rgba(16, 185, 129, 0.15)',
+    boxShadow: '0 0 12px rgba(16, 185, 129, 0.5)',
+  }}
+  initial={{ opacity: 0, y: 5 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{
+    duration: 0.2,
+    delay: index * 0.05,
+  }}
+>
+  {tag}
+</motion.span>
           ))}
         </div>
 

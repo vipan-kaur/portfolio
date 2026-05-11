@@ -257,7 +257,7 @@ export default function Education() {
         >
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Continuous Learning</h2>
           <p className="text-gray-400 mb-6">
-            I'm committed to staying updated with the latest technologies and best practices in web development. 
+            I&apos;m committed to staying updated with the latest technologies and best practices in web development. 
             Check out my certificates page for my credentials and training achievements.
           </p>
           <motion.a

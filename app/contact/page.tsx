@@ -100,7 +100,7 @@ export default function Contact() {
             className="text-xl text-gray-400 max-w-3xl mx-auto"
             variants={itemVariants}
           >
-            Have a project in mind or want to collaborate? I'd love to hear from you. Reach out and let's create something amazing together!
+            Have a project in mind or want to collaborate? I&apos;d love to hear from you. Reach out and let&apos;s create something amazing together!
           </motion.p>
         </motion.div>
       </section>
@@ -296,7 +296,7 @@ export default function Contact() {
               >
                 <h3 className="text-lg font-bold text-white">Quick Response</h3>
                 <p className="text-sm text-gray-400">
-                  I aim to respond to all inquiries within 24 hours. Let's get your project started!
+                  I aim to respond to all inquiries within 24 hours. Let&apos;s get your project started!
                 </p>
               </motion.div>
 

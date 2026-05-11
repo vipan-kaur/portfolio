@@ -124,7 +124,7 @@ export default function Navbar() {
               href="/contact"
               className="btn-primary text-sm"
             >
-              Let's Talk
+              Let&apos;s Talk
             </Link>
           </motion.div>
 
@@ -171,7 +171,7 @@ export default function Navbar() {
                 className="block btn-primary text-center text-sm mt-4"
                 onClick={() => setIsOpen(false)}
               >
-                Let's Talk
+                Let&apos;s Talk
               </Link>
             </motion.div>
           </motion.div>

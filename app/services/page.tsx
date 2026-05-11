@@ -160,7 +160,7 @@ export default function Skills() {
             className="text-xl text-gray-400 max-w-3xl mx-auto"
             variants={itemVariants}
           >
-            Technologies and tools I'm learning and practicing as a Full Stack MERN developer.
+            Technologies and tools I&apos;m learning and practicing as a Full Stack MERN developer.
           </motion.p>
         </motion.div>
       </section>
