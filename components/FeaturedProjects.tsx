@@ -1,15 +1,16 @@
 'use client'
-
+import Image, { StaticImageData } from 'next/image'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { HiArrowSmallRight, HiEye } from 'react-icons/hi2'
 import { FaGithub } from 'react-icons/fa'
-
+import homeelon from '../assets/elon.png'
+import elctro from '../assets/image copy.png'
 interface Project {
   id: number
   title: string
   description: string
-  image: string
+ image: string | StaticImageData
   tags: string[]
   features: string[]
   github?: string
@@ -21,33 +22,29 @@ const projects: Project[] = [
     id: 1,
     title: 'E-commerce Platform',
     description: 'A full-stack e-commerce solution built with MERN stack featuring advanced UI and complete backend APIs.',
-    image: 'https://via.placeholder.com/500x300?text=E-commerce',
+    image: elctro,
     tags: ['React', 'Node.js', 'MongoDB', 'Redux', 'Tailwind'],
     features: [
       'User Authentication',
-      'Product Management',
       'Shopping Cart System',
-      'Payment Integration',
       'Admin Dashboard',
+       'Search Optimization',
     ],
-    github: '#',
-    demo: '#',
   },
   {
     id: 2,
-    title: 'E-commerce Platform v2',
+    title: 'E-commerce Platform ',
     description: 'Enhanced version with improved UI/UX and additional features for better user experience.',
-    image: 'https://via.placeholder.com/500x300?text=E-commerce+v2',
-    tags: ['React', 'Express', 'MongoDB', 'Bootstrap'],
+    image: homeelon,
+    tags: ['React', 'Express', 'MongoDB', 'node.js'],
     features: [
-      'Advanced Filtering',
-      'User Reviews',
-      'Order Tracking',
+      'redux',
+     'Shopping Cart System',
       'Wishlist Feature',
+      'crud',
       'Search Optimization',
+        'Admin Dashboard',
     ],
-    github: '#',
-    demo: '#',
   },
 ]
 
@@ -69,13 +66,21 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
     >
       {/* Image Container */}
       <div className="relative h-64 md:h-72 overflow-hidden bg-gradient-to-br from-emerald-500/20 to-teal-500/20">
-        <motion.img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover grayscale group-hover:scale-110 group-hover:grayscale-0 transition-all duration-500"
-        />
+       <motion.div
+  whileHover={{ scale: 1.1 }}
+  transition={{ duration: 0.5 }}
+  className="w-full h-full"
+>
+  <Image
+    src={project.image}
+    alt={project.title}
+    width={500}
+    height={300}
+    className="w-full h-full object-cover  transition-all duration-500"
+  />
+</motion.div>
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
+        <div className="absolute inset-0 " />
 
         {/* Action Buttons */}
         <motion.div

@@ -153,8 +153,7 @@ export default function About() {
               viewport={{ once: true }}
             >
               {[
-                { number: '5+', label: 'Projects Completed', color: 'from-purple-500' },
-                { number: '2+', label: 'Years in Web Dev', color: 'from-pink-500' },
+              
                 { number: '100%', label: 'Dedication', color: 'from-blue-500' },
               ].map((stat, i) => (
                 <motion.div

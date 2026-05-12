@@ -1,70 +1,74 @@
 'use client'
-
+import Image, { StaticImageData } from 'next/image'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import Link from 'next/link'
 import { HiFilter } from 'react-icons/hi'
-
+import weather from '../../assets/weath.png'
+import homeelon from '../../assets/elon.png'
+import elctro from '../../assets/image copy.png'
 interface Project {
   id: number
   title: string
   description: string
-  image: string
+  image: string |StaticImageData
   tags: string[]
   category: string
   features: string[]
   github?: string
   demo?: string
+  href?:string 
 }
 
 const allProjects: Project[] = [
   {
     id: 1,
-    title: 'Task Management App',
-    description: 'A full-stack task management application with user authentication and real-time updates.',
-    image: 'https://via.placeholder.com/500x400?text=Task+Manager',
-    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind'],
-    category: 'Full Stack',
+    title: 'E-commerce Platform',
+    description: 'A full-stack e-commerce solution built with MERN stack featuring advanced UI and complete backend APIs.',
+    image: elctro,
+    tags: ['React', 'Node.js', 'MongoDB', 'Redux', 'Tailwind'],
+     category: 'frontend',
     features: [
-      'User Login & Registration',
-      'Create & Manage Tasks',
-      'Task Categories',
-      'Real-time Updates',
-      'Responsive Design',
-      'MongoDB Integration',
+      'User Authentication',
+      'Shopping Cart System',
+      'Admin Dashboard',
+       'Search Optimization',
     ],
+  href: 'https://e-commrece-six.vercel.app/',
   },
   {
     id: 2,
+    title: 'E-commerce Platform ',
+    description: 'Enhanced version with improved UI/UX and additional features for better user experience.',
+    image: homeelon,
+    tags: ['React', 'Express', 'MongoDB', 'node.js'],
+     category: 'Full stack',
+    features: [
+      'redux',
+     'Shopping Cart System',
+      'Wishlist Feature',
+      'crud',
+      'Search Optimization',
+        'Admin Dashboard',
+    ],
+    github: 'https://github.com/vipan-kaur/Elon-Frontend.git',
+    href: 'https://elon-frontend.vercel.app/',
+  }
+  ,{
+    id: 3,
     title: 'Weather App',
     description: 'A React weather application using OpenWeather API with city search and forecast display.',
-    image: 'https://via.placeholder.com/500x400?text=Weather+App',
-    tags: ['React', 'API', 'Tailwind', 'JavaScript'],
+    image: weather,
+    tags: ['React', 'API', 'Tailwind', 'JavaScript','materialui'],
     category: 'Frontend',
     features: [
       'Search Cities',
       'Real-time Weather Data',
-      '5-Day Forecast',
-      'Temperature Conversion',
       'Responsive Layout',
-      'Weather Icons',
     ],
   },
-  {
-    id: 3,
-    title: 'Blog Platform',
-    description: 'A blogging platform with post creation, editing, and user comments built with MERN stack.',
-    image: 'https://via.placeholder.com/500x400?text=Blog+Platform',
-    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
-    category: 'Full Stack',
-    features: [
-      'Create Blog Posts',
-      'User Comments',
-      'Search Posts',
-      'User Authentication',
-      'Edit Own Posts',
-      'Category Filtering',
-    ],
-  },
+
+  
 ]
 
 const categories = ['All', 'Frontend', 'Full Stack']
@@ -94,14 +98,17 @@ function ProjectCard({ project }: { project: Project }) {
 
       {/* Image */}
       <div className="relative h-64 overflow-hidden bg-gradient-to-br from-emerald-500/20 to-teal-500/20">
-        <motion.img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover grayscale group-hover:scale-110 group-hover:grayscale-0 transition-all duration-500"
-          animate={{
-            scale: isHovered ? 1.1 : 1,
-          }}
-        />
+       <motion.div
+  animate={{ scale: isHovered ? 1.1 : 1 }}
+  className="w-full h-full"
+><Link href={project.href || '#'} target="_blank">
+  <Image
+    src={project.image}
+    alt={project.title}
+    fill
+    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+  /></Link>
+</motion.div>
         <motion.div
           className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"
           animate={{

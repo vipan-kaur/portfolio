@@ -20,7 +20,7 @@ const education: EducationItem[] = [
     institution: 'CT University',
     duration: '2022 - 2026',
     location: 'Ludhiana, Punjab',
-    description: 'Pursuing Bachelor of Technology in Computer Science Engineering with a strong focus on software development, data structures, algorithms, and web technologies.',
+    description: 'Pursuing Bachelor of Technology in Computer Science Engineering with a strong focus on web development, data structures, algorithms, and web technologies.',
     highlights: [
       'Computer Science & Engineering',
       'Data Structures & Algorithms',

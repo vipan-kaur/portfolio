@@ -268,8 +268,8 @@ export default function Contact() {
 
                 <div className="flex gap-4 pt-4">
                   {[
-                    { icon: FaGithub, href: '#', label: 'GitHub' },
-                    { icon: FaLinkedin, href: '#', label: 'LinkedIn' },
+                    { icon: FaGithub, href: 'https://github.com/vipan-kaur', label: 'GitHub' },
+                    { icon: FaLinkedin, href: 'linkedin.com/in/vipan-kaur-21ab3b287', label: 'LinkedIn' },
                   ].map((social, i) => {
                     const Icon = social.icon
                     return (
